@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-direction</title>
+    <style>
+        .wrap{
+            display: flex;   
+            border: 1px solid pink;
+        }
+        .row{
+            flex-direction: row;
+        }
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .column-reverse{
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap row">
+        <div>aaa</div>
+        <div>bbb</div>
+        <div>ccc</div>
+        <div>ddd</div>
+    </div>
+    <div class="wrap row-reverse">
+        <div>aaa</div>
+        <div>bbb</div>
+        <div>ccc</div>
+        <div>ddd</div>
+    </div>
+    <div class="wrap column">
+        <div>aaa</div>
+        <div>bbb</div>
+        <div>ccc</div>
+        <div>ddd</div>
+    </div>
+    <div class="wrap column-reverse">
+        <div>aaa</div>
+        <div>bbb</div>
+        <div>ccc</div>
+        <div>ddd</div>
+    </div>
+</body>
+</html>

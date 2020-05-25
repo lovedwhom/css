@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>counter-reset</title>
+    <style>
+        body{
+            counter-reset: firset;
+        }
+        h2::before{
+            counter-increment: firset ;
+            content: counters(firset,'.');
+        }
+    </style>
+</head>
+<body>
+<h2>圣诞节系列</h2>
+<ul>
+    <li>麋鹿</li>
+    <li>平安夜</li>
+    <li>圣诞老人</li>
+</ul>
+
+<h2>元旦系列</h2>
+<ul>
+    <li>跨年</li>
+    <li>放假咯</li>
+    <li>吃火锅</li>
+</ul>
+</body>
+</html>

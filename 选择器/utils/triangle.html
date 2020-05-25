@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div.left{
+            width: 50px;
+            height: 20px;
+            background: deepskyblue;
+            position: relative;
+        }
+        div.left::before{
+            content: '';
+            width: 0;
+            height: 0;
+            display: inline-block;
+            /*background: deepskyblue;*/
+            position: absolute;
+            left: -10px;
+            top: 5px;
+            border: 5px solid deepskyblue;
+            border-color: transparent deepskyblue transparent transparent;
+
+        }
+    </style>
+</head>
+<body>
+<div class="left">
+
+</div>
+</body>
+</html>

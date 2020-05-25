@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        .container{
+            display: flex;
+            /* flex-direction: column; */
+            height: 80px;
+            border: 1px solid cornflowerblue
+        }
+        .flex-item1{
+            background-color: blue;
+        }
+        .flex-item2{
+            background-color: pink;
+        }
+        .flex-item3{
+            background-color: yellowgreen;
+        }
+        .flex-item4{
+            background-color: cornflowerblue;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .center{
+            align-items: center;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flex-start">
+        <div class="flex-item1">aaaaaaaaaa</div>
+        <div class="flex-item2">bbbbbbbbbb</div>
+        <div class="flex-item3">cccccccccc</div>
+        <div class="flex-item4">dddddddddd</div>
+    </div>
+    <div class="container flex-end">
+        <div class="flex-item1">aaaaaaaaaa</div>
+        <div class="flex-item2">bbbbbbbbbb</div>
+        <div class="flex-item3">cccccccccc</div>
+        <div class="flex-item4">dddddddddd</div>
+    </div>
+    <div class="container center">
+        <div class="flex-item1">aaaaaaaaaa</div>
+        <div class="flex-item2">bbbbbbbbbb</div>
+        <div class="flex-item3">cccccccccc</div>
+        <div class="flex-item4">dddddddddd</div>
+    </div>
+    <div class="container baseline">
+        <div class="flex-item1">aaaaaaaaaa</div>
+        <div class="flex-item2">bbbbbbbbbb</div>
+        <div class="flex-item3">cccccccccc</div>
+        <div class="flex-item4">dddddddddd</div>
+    </div>
+    <div class="container stretch">
+        <div class="flex-item1">aaaaaaaaaa</div>
+        <div class="flex-item2">bbbbbbbbbb</div>
+        <div class="flex-item3">cccccccccc</div>
+        <div class="flex-item4">dddddddddd</div>
+    </div>
+</body>
+</html>

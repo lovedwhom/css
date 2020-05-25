@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-wrap</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: pink;
+            margin-top: 50px;
+        }
+        .flex-item{
+            width: 600px;
+            border: 1px solid black;
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container nowrap">
+        <div class="flex-item ">aaaaaa</div>
+        <div class="flex-item ">bbbbbb</div>
+        <div class="flex-item ">cccccc</div>
+        <div class="flex-item ">dddddd</div>
+    </div>
+    <div class="container wrap">
+        <div class="flex-item ">aaaaaa</div>
+        <div class="flex-item ">bbbbbb</div>
+        <div class="flex-item ">cccccc</div>
+        <div class="flex-item ">dddddd</div>
+    </div>
+    <div class="container wrap-reverse">
+        <div class="flex-item ">aaaaaa</div>
+        <div class="flex-item ">bbbbbb</div>
+        <div class="flex-item ">cccccc</div>
+        <div class="flex-item ">dddddd</div>
+    </div>
+</body>
+</html>

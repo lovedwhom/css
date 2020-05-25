@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>writing-mode</title>
+    <style>
+        .text{
+            /*direction: ltr;*/
+            direction: rtl;
+            border: 1px solid grey;
+        }
+        .tb{
+            writing-mode: horizontal-tb;
+        }
+        .rl{
+            writing-mode: vertical-rl;
+        }
+        .lr{
+            writing-mode: vertical-lr;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="text tb">
+        <p>123</p>
+        <p>456</p>
+        <p>789</p>
+    </div>
+    <div class="text rl">
+        <p>123</p>
+        <p>456</p>
+        <p>789</p>
+    </div>
+    <div class="text lr">
+        <p>123</p>
+        <p>456</p>
+        <p>789</p>
+    </div>
+</div>
+</body>
+</html>

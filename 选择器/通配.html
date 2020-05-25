@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <style>
+        *[lang^=en]{color:green;}
+        *[elang^=en]{color:green;}
+        *.warning {color:red;}
+        *#maincontent {border: 1px solid blue;}
+    </style>
+</head>
+<body>
+<div>
+    <p class="warning">
+        <span lang="en-us">A green span</span> in a red paragraph.
+        <span elang="en-us">A green span</span> in a red paragraph.
+    </p>
+    <p id="maincontent" lang="en-gb">
+        <span class="warning">A red span</span> in a green paragraph.
+    </p>
+</div>
+</body>
+</html>
