@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minmax</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .container{
+            /* minmax(100px, 1fr) 表示列宽不小于100px 不大于1fr */
+            grid-template-columns: 1fr 1fr minmax(100px, 1fr);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+    </div>
+</body>
+</html>
