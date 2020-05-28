@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .item{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item">
+        <style>
+            .grid{
+                display: grid;
+            }
+        </style>
+        <p>display：grid 默认情况下 容器元素是块级元素</p>
+        <div class="grid-container">
+            <span>foo</span>
+            <div class="grid">grid</div>
+            <span>bar</span>
+        </div>
+    </div>
+    <div class="item">
+        <style>
+            .grid {
+                display: inline-grid;
+            }
+        </style>
+        <div class="grid-container">
+            <span>foo</span>
+            <div class="grid">grid</div>
+            <span>bar</span>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
