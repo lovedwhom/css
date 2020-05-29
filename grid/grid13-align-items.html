@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .container{
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            justify-items: start;
+
+           /* 对其单元格的起始边缘 */
+            /* align-items: start; */
+
+            /* 对其单元格结束实边缘 */
+            /* align-items: end; */
+
+            /*单元格内部居中  */
+            /* align-items: center; */
+
+            /* 拉伸，占满单元格的整个宽度（默认值） */
+            align-items: stretch;
+        }
+        .item1{
+            background-color: red;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>

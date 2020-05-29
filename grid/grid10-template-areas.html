@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-gap</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .container{
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+
+            /*分成9个区域  */
+            /* grid-template-areas: 'a b c'
+                                 'd e f'
+                                 'g h i'; */
+            /* 多个单元格合并成一个区域
+             *分成a b c 三个区域
+             */
+            /* grid-template-areas: 'a a a'
+                                 'b b b'
+                                 'c c c'; */
+            /*中间一列为点，表示没有用到该单元格  */
+            /* grid-template-areas:    'a . c'
+                                    'd . f'
+                                    'g . i'; */
+                                 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+    </div>
+</body>
+</html>

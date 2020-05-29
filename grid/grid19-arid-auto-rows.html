@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-auto-columns</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .container{
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            /* grid-auto-columns: 150px; */
+            /* 浏览器自动创建的多余网格的列宽和行高 */
+            
+            grid-auto-rows: 50px;
+        
+        }
+        .item1{
+            background-color: red;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>

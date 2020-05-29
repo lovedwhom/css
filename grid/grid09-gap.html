@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-gap</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .container{
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            /* grid-row-gap: 20px;
+            grid-column-gap:20px */
+
+            /*最新标准grid前缀已经删除  */
+            /* column-gap: 20px;
+            row-gap: 20px; */
+            /* 
+            column-gap和row-gap 简写
+             */
+            /* grid-gap:20px 20px */
+
+            /* 同上前缀grid可以省略 */
+            /* 省略第二个值 浏览器认为第二个值等于第一个值 */
+            gap:20px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+    </div>
+</body>
+</html>

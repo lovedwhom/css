@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place-items</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .container{
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+           
+           /* place-items 是align-items 和 justify-items的合并简写 */
+           /* place-items: <align-items> <justify-items>; */
+           place-items: start end;
+
+           /* 如果省略第二个值 则浏览器任务与第一个值相等 */
+           place-items: start;
+        }
+        .item1{
+            background-color: red;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>

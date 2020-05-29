@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-content</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .container{
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+
+           /* 对其单元格的起始边缘 */
+            /* align-content: start; */
+
+            /* 对其单元格结束实边缘 */
+            /* align-content: end; */
+
+            /*单元格内部居中  */
+            /* align-content: center; */
+
+            /* 拉伸，占满单元格的整个宽度（默认值） */
+            /* align-content: stretch; */
+
+            /* 每个项目两侧的间隔相等。所以，项目之间的间隔比项目与容器边框的间隔大一倍 */
+            /* align-content: space-around; */
+
+            /* 项目与项目的间隔相等，项目与容器边框之间没有间隔 */
+            /* align-content: space-between; */
+
+            /*项目与项目的间隔相等，项目与容器边框之间也是同样长度的间隔。  */
+            align-content: space-evenly;
+
+        }
+        .item1{
+            background-color: red;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>
