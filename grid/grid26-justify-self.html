@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>grid-column-start</title>
+    <title>justify-self</title>
     <link rel="stylesheet" href="./css/index.css">
     <style>
-        .container{
+        .container {
             grid-template-columns: 100px 100px 100px;
             grid-template-rows: 100px 100px 100px;
-            
         }
-
-
         .item{
             font-size: 4em;
             text-align: center;
             border: 1px solid #e5e4e9; 
         }
 
-        /* grid-column-start属性：左边框所在的垂直网格线
-        grid-column-end属性：右边框所在的垂直网格线
-        grid-row-start属性：上边框所在的水平网格线
-        grid-row-end属性：下边框所在的水平网格线 */
         .item1 {
-            background-color: #ef342a;
-            grid-column-start: 2;
-            grid-column-end: 4;
+
+             /* 对其单元格的起始边缘 */
+            /* justify-self: start; */
+
+            /* 对其单元格结束实边缘 */
+            /* justify-self: end; */
+
+            /*单元格内部居中  */
+            /* justify-self: center; */
+
+            /* 拉伸，占满单元格的整个宽度（默认值） */
+            justify-items: stretch;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item item1">1</div>
+         <div class="item item1">1</div>
         <div class="item item">2</div>
         <div class="item item">3</div>
         <div class="item item">4</div>

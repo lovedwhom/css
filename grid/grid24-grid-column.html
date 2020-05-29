@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>grid-column-start</title>
+    <title>grid-column / grid-row</title>
     <link rel="stylesheet" href="./css/index.css">
     <style>
-        .container{
+         .container{
             grid-template-columns: 100px 100px 100px;
             grid-template-rows: 100px 100px 100px;
             
@@ -18,15 +18,13 @@
             text-align: center;
             border: 1px solid #e5e4e9; 
         }
-
-        /* grid-column-start属性：左边框所在的垂直网格线
-        grid-column-end属性：右边框所在的垂直网格线
-        grid-row-start属性：上边框所在的水平网格线
-        grid-row-end属性：下边框所在的水平网格线 */
+        
         .item1 {
-            background-color: #ef342a;
-            grid-column-start: 2;
-            grid-column-end: 4;
+            /* grid-column属性是grid-column-start和grid-column-end的合并简写形式 */
+            grid-column: 1 /3;
+
+            /*grid-row属性是grid-row-start属性和grid-row-end的合并简写形式。*/
+            grid-row: 2 / 4;
         }
     </style>
 </head>

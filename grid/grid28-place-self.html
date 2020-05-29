@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>grid-column-start</title>
+    <title>place-self</title>
     <link rel="stylesheet" href="./css/index.css">
     <style>
         .container{
             grid-template-columns: 100px 100px 100px;
             grid-template-rows: 100px 100px 100px;
-            
+         
         }
-
-
         .item{
             font-size: 4em;
-            text-align: center;
+            /* text-align: center; */
             border: 1px solid #e5e4e9; 
+
+              
+         
         }
 
-        /* grid-column-start属性：左边框所在的垂直网格线
-        grid-column-end属性：右边框所在的垂直网格线
-        grid-row-start属性：上边框所在的水平网格线
-        grid-row-end属性：下边框所在的水平网格线 */
-        .item1 {
-            background-color: #ef342a;
-            grid-column-start: 2;
-            grid-column-end: 4;
+        .item1{
+            background-color: red;
+
+              /* place-self 是align-self 和 justify-self */
+           /* place-self: <align-v> <justify-self>; */
+           /* place-items: start end; */
+
+           /* 如果省略第二个值 则浏览器任务与第一个值相等 */
+           place-self: start;
+           place-self: start stretch;
         }
+        
+        
     </style>
 </head>
 <body>
