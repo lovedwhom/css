@@ -6,6 +6,7 @@
     <title>justify-items</title>
     <link rel="stylesheet" href="./css/index.css">
     <style>
+        /* justify-items 为所有盒子中的项目定义了默认的 justify-self */
         .container{
             grid-template-columns: 100px 100px 100px;
            
@@ -16,10 +17,10 @@
             /* justify-items: end; */
 
             /*单元格内部居中  */
-            /* justify-items: center; */
+            justify-items: center;
 
             /* 拉伸，占满单元格的整个宽度（默认值） */
-            justify-items: stretch;
+            /* justify-items: stretch; */
         }
         .item1{
             background-color: red;
