@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下划线-波浪线</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .container > p {
+            font-size: 40px;
+            display: inline;
+            /* background: linear-gradient(red 0 100%) no-repeat; */
+            background:linear-gradient(-45deg, transparent 40%,  red, red 60%, transparent 0) 0 1em, linear-gradient(45deg, transparent 40%,  red, red 60%, transparent 0) .1em 1em;
+
+            background-repeat: repeat-x;
+            /* background-repeat: repeat-x; */
+            background-size: .2em .1em;
+            text-shadow: 2px 0 white, -2px 0 white;
+            /* background-size: 100% 1px; */
+            background-position-y: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p> This is my first paragraph. This is my first paragraph. This is my first paragraph.</p>
+    </div>
+</body>
+</html>
