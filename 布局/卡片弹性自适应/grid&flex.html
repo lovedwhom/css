@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid&&flex 实现卡片弹性自适应布局</title>
+    <style>
+        .parent{
+            height: auto;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        .visual {
+            height: 100px;
+            width: 100%;
+            background: wheat;
+            margin: 0.5rem 0;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: lightpink;
+            padding: 1rem;
+        }
+
+        body {
+            font-family: system-ui, sans-serif;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="parent white">
+    <div class="card yellow">
+        <h3>Title - Card 1</h3>
+        <p contenteditable>Medium length description with a few more words here.</p>
+        <div class="visual pink"></div>
+    </div>
+    <div class="card yellow">
+        <h3>Title - Card 2</h3>
+        <p contenteditable>Long Description. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div class="visual blue"></div>
+    </div>
+    <div class="card yellow">
+        <h3>Title - Card 3</h3>
+        <p contenteditable>Short Description.</p>
+        <div class="visual green"></div>
+    </div>
+</div>
+
+</body>
+</html>

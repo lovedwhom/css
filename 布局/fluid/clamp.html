@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clamp函数实现 fluid typography</title>
+    <style>
+        .parent{
+            display: grid;
+            place-items: center;
+        }
+
+        .card{
+            /*ch 一个数字0的宽度*/
+            /*clamp 最小值 首选值 最大值*/
+            width: clamp(23ch, 50% ,46ch);
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        }
+        .visual{
+            height: 125px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="parent white">
+    <div class="card purple">
+        <h1>Title Here</h1>
+        <div class="visual yellow"></div>
+        <p>Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.</p>
+    </div>
+</div>
+
+</body>
+</html>

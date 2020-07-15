@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>固定header和footer</title>
+    <style>
+        .parent{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+        header,footer{
+            padding: 10px;
+            background:lightpink;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="parent">
+        <header class="blue section" contenteditable>Header</header>
+        <main class="coral section" contenteditable>Main</main>
+        <footer class="purple section" contenteditable>Footer Content</footer>
+    </div>
+
+</div>
+</body>
+</html>

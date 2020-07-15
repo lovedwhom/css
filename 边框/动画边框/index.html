@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #22bb22;
+        }
+
+        @keyframes animated-border {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255,255,255,0.4);
+            }
+            100% {
+                /*x偏移量 y偏移量 阴影模糊半径 阴影扩散半径*/
+                box-shadow: 0 0 0 20px rgba(255,255,255,0);
+            }
+        }
+
+        #box{
+            animation: animated-border 1.5s infinite;
+            font-family: Arial;
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: bold;
+            color: white;
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    编程适合那些有不同想法的人... <br/>
+    对于那些想要创造大事物并愿意改变世界的人们。
+</div>
+</body>
+</html>
