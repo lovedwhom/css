@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父容器宽度不固定，文本不定宽</title>
+    <style>
+        .wrap{
+            position: relative;
+            /*width: 150px;*/
+            overflow: hidden;
+        }
+        p{
+            display: inline-block;
+            white-space: nowrap;
+        }
+        p:hover {
+            animation: move 1.5s infinite alternate linear;
+        }
+        @keyframes move {
+            0% {
+                left:0;
+                transform: translate(0,0);
+            }
+            100% {
+                left: 100%;
+                transform: translate(-100%,0);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <p title = "我的宽度是正常宽度" > 我的宽度是正常宽度</p>
+    <p class="scroll" title="我的宽度是溢出了一小部分">我的宽度是溢出了一小部分</p>
+    <p class="scroll" title="我的宽度是溢出了溢出了很大一部分">我的宽度是溢出了溢出了很大一部分</p>
+</div>
+</body>
+</html>
